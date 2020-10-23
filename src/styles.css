@@ -8,6 +8,7 @@
 ::before,
 ::after {
   box-sizing: inherit;
+  margin: 0;
 }
 body {
   font-family: Lato, sans-serif;
@@ -25,9 +26,6 @@ body {
   background-color: #f2f2f2;
   border-radius: 0.5em;
   text-align: center;
-}
-.counter * {
-  margin: 0;
 }
 .counter__title {
   font-weight: bold;
@@ -54,12 +52,10 @@ body {
 }
 .search > p {
   color: #b2b2b2;
-  margin: 0;
   font-size: 0.8em;
 }
 .search__dropdown {
   outline: none;
-  margin: 0;
   font-size: 1em;
   padding: 1em 0;
   color: #6685bd;
@@ -91,15 +87,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.15);
   height: 2em;
   width: 100%;
-  margin: 0;
 }
 .listname {
   padding-left: 0;
-  margin: 0;
   list-style: none;
 }
 .listname li + li {
-  margin: 0;
   padding-top: 0.5em;
 }
 .listname > li > a {
@@ -110,7 +103,6 @@ body {
   font-weight: bold;
 }
 .listname > li > a > p {
-  margin: 0;
   color: rgba(0, 0, 0, 0.3);
 }
 .listname > li > a:hover {
