@@ -1,0 +1,24 @@
+.counter {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #f2f2f2;
+  border-radius: 0.5em;
+  text-align: center;
+}
+.counter * {
+  margin: 0;
+}
+.counter__title {
+  font-weight: bold;
+}
+.counter__body {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: row;
+}
+.counter__column + .counter__column {
+  margin-left: 1em;
+}
+.counter__column > span:nth-child(1) {
+  font-size: 1.5rem;
+}

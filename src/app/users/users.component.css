@@ -1,0 +1,53 @@
+.search__drawer {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 12em;
+  margin: 0;
+  min-width: 100%;
+  border-radius: 0.5em;
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 30em) {
+  .search__drawer {
+    top: 8em;
+  }
+}
+.search-drawer.active {
+  display: block;
+}
+.search-form {
+  padding: 0.5em 1em;
+}
+.search-form input:not([type="checkbox"]):not([type="radio"]) {
+  display: block;
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  height: 2em;
+  width: 100%;
+  margin: 0;
+}
+.listname {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+.listname li + li {
+  margin: 0;
+  padding-top: 0.5em;
+}
+.listname > li > a {
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+.listname > li > a > p {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.3);
+}
+.listname > li > a:hover,
+.listname > li > a:focus {
+  background-color: rgb(238, 238, 238);
+}

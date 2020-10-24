@@ -1,30 +1,6 @@
-:root {
-  box-sizing: border-box;
-  font-size: 0.875em;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
-}
-*,
-::before,
-::after {
-  box-sizing: inherit;
-  margin: 0;
-}
-body {
-  font-family: Lato, sans-serif;
-  color: #5c5c5c;
-  background-color: white;
-}
-.wrapper {
-  display: flex;
-}
-.wrapper * + * {
-  margin-left: 1em;
-}
-
 .search {
   background-color: #f2f2f2;
-  padding: 0.5em 1em;
+  padding: 0.5em 4em 0.5em 1em;
   border-radius: 0.5em;
   text-align: left;
   position: relative;
@@ -32,6 +8,7 @@ body {
 }
 .search > p {
   color: #b2b2b2;
+  margin: 0;
   font-size: 0.8em;
 }
 .search__dropdown {
