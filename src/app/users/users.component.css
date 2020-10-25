@@ -1,5 +1,5 @@
 .search__drawer {
-  display: block;
+  display: none;
   position: absolute;
   left: 0;
   top: 12em;
@@ -8,13 +8,14 @@
   border-radius: 0.5em;
   box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.3);
 }
+.search__drawer.active {
+  display: block;
+}
+
 @media (min-width: 30em) {
   .search__drawer {
     top: 8em;
   }
-}
-.search-drawer.active {
-  display: block;
 }
 .search-form {
   padding: 0.5em 1em;

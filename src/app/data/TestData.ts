@@ -2,7 +2,7 @@ import { User } from "../model/User";
 import { ReservationsRules } from "../model/ReservationsRules";
 
 export class TestData {
-  static reservationsRules: ReservationsRules = {
+  public reservationsRules: ReservationsRules = {
     reservationsAvailable: 4,
     reservationsTotal: 6,
     hoursAvailable: 12,

@@ -13,7 +13,8 @@ export class CounterComponent implements OnInit {
 
   ngOnInit() {
     this.dataHandler.reservationsRulesSubject.subscribe(
-      reservationsRules => (reservationsRules = reservationsRules)
+      reservationsRules => (this.reservationsRules = reservationsRules)
     );
+    console.log(this.reservationsRules);
   }
 }
