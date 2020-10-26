@@ -11,10 +11,5 @@ export class CounterComponent implements OnInit {
   reservationsRules: ReservationsRules;
   constructor(private dataHandler: DataHandleService) {}
 
-  ngOnInit() {
-    this.dataHandler.reservationsRulesSubject.subscribe(
-      reservationsRules => (this.reservationsRules = reservationsRules)
-    );
-    console.log(this.reservationsRules);
-  }
+  ngOnInit() {}
 }

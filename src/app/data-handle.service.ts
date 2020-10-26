@@ -9,9 +9,5 @@ import { ReservationsRules } from "./model/ReservationsRules";
 })
 export class DataHandleService {
   usersSubject = new BehaviorSubject<User[]>(TestData.users);
-  reservationsRulesSubject = new BehaviorSubject<ReservationsRules>(
-    TestData.reservationsRules
-  );
-
   constructor() {}
 }
