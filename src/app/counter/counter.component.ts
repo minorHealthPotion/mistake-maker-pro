@@ -8,8 +8,12 @@ import { ReservationsRules } from "../model/ReservationsRules";
   styleUrls: ["./counter.component.css"]
 })
 export class CounterComponent implements OnInit {
-  reservationsRules: ReservationsRules;
+  counter: ReservationsRules;
   constructor(private dataHandler: DataHandleService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.dataHandler.counterSubject.subscribe(
+      counter => (this.counter = counter)
+    );
+  }
 }
