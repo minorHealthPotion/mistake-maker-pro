@@ -4,11 +4,9 @@
   border-radius: 0.5em;
   text-align: left;
   position: relative;
-  display: inline-block;
 }
 .search > p {
   color: #b2b2b2;
-  margin: 0;
   font-size: 0.8em;
 }
 .search__dropdown {
