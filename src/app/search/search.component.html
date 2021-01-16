@@ -1,7 +1,9 @@
 <div class="search">
 	<p>Бронирование для:</p>
-	<button id="btnToggle" class="search__dropdown" >Фамилия Имя Отчество</button>
-	<app-users></app-users>
+	<button (click) = "toggleSearch()" class="search__dropdown" >Фамилия Имя Отчество</button>
+	<div *ngIf="toggle">
+		<app-users></app-users>
+	</div>
 	<p>Большой начальник</p>
 	<p>Блок Contech</p>
 </div>
