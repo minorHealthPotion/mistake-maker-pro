@@ -1,11 +1,11 @@
 import { User } from "../model/User";
 import { ReservationsRules } from "../model/ReservationsRules";
 
-export class Counter {
-  static counter: ReservationsRules = new ReservationsRules(2, 2, 16, 16);
-}
+
 
 export class TestData {
+  static counter: ReservationsRules = new ReservationsRules(2, 2, 16, 16);
+  
   static users: User[] = [
     {
       id: 0,
